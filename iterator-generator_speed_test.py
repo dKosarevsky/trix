@@ -1,8 +1,9 @@
 from datetime import datetime
 
 
-# Тестируем скорость Итератора и декоратора
+# Тестируем скорость Итератора и Генератора
 
+# Итератор:
 def iterate_speed_tests():
     start = datetime.now()
     l = []
@@ -13,6 +14,7 @@ def iterate_speed_tests():
     return l
 
 
+# Генератор:
 def generate_speed_test():
     start = datetime.now()
     l = [x for x in range(10**4) if x % 2 == 0]
